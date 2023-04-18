@@ -88,8 +88,8 @@ class YTS_Widget extends WP_Widget {
 			name="<?php echo esc_attr( $this->get_field_name( 'count' ) ); ?>" 
 			type="text" 
 			value="<?php echo esc_attr( $count ); ?>">
-			<option value="default" <?php echo ($layout == 'default')? 'selected':''; ?>>Default</option>
-			<option value="hidden" <?php echo ($layout == 'hidden')? 'selected':''; ?>>Hidden</option></select>
+			<option value="default" <?php echo ($count == 'default')? 'selected':''; ?>>Default</option>
+			<option value="hidden" <?php echo ($count == 'hidden')? 'selected':''; ?>>Hidden</option></select>
 		</p>
 		<?php 
 	}
